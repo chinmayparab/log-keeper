@@ -13,9 +13,7 @@ const App = () => {
   return (
     <Fragment>
       <SearchBar />
-      <div className='container'>
-        <Logs />
-      </div>
+      <Logs />
     </Fragment>
   );
 };
