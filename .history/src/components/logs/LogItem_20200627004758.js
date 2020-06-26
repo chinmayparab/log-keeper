@@ -12,7 +12,7 @@ const LogItem = ({ log }) => {
             log.attention ? "red-text" : "blue-text"
           }`}
         >
-          {log.message}
+          {log.messages}
         </a>
         <br />
         <span className='grey-text'>

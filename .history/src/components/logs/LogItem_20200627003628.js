@@ -2,7 +2,7 @@ import React from "react";
 import Moment from "react-moment";
 import PropTypes from "prop-types";
 
-const LogItem = ({ log }) => {
+const LogItem = (log) => {
   return (
     <li className='collection-item'>
       <div>
@@ -12,7 +12,7 @@ const LogItem = ({ log }) => {
             log.attention ? "red-text" : "blue-text"
           }`}
         >
-          {log.message}
+          {log.messages}
         </a>
         <br />
         <span className='grey-text'>
