@@ -19,19 +19,17 @@ const App = () => {
   });
 
   return (
-    <Provider store={store}>
-      <Fragment>
-        <SearchBar />
-        <div className='container'>
-          <AddBtn />
-          <AddLogModal />
-          <EditLogModal />
-          <AddTechModal />
-          <TechListModal />
-          <Logs />
-        </div>
-      </Fragment>
-    </Provider>
+    <Fragment>
+      <SearchBar />
+      <div className='container'>
+        <AddBtn />
+        <AddLogModal />
+        <EditLogModal />
+        <AddTechModal />
+        <TechListModal />
+        <Logs />
+      </div>
+    </Fragment>
   );
 };
 
