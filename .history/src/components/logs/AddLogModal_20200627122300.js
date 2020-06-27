@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddLogModal = () => {
   const [message, setMessage] = useState("");
@@ -7,11 +6,7 @@ const AddLogModal = () => {
   const [tech, setTech] = useState("");
 
   const onSubmit = () => {
-    if (message === "" || tech === "") {
-      M.toast({ html: "Please enter a message and tech" });
-    } else {
-      console.log(message, tech, attention);
-    }
+    console.log(message, tech, attention);
   };
 
   return (
@@ -19,7 +14,7 @@ const AddLogModal = () => {
       <div className='modal-content'>
         <h4>Enter Sytem Log</h4>
 
-        <div className='row'>
+        {/* <div className='row'>
           <div className='input-field'>
             <input
               type='text'
@@ -31,9 +26,9 @@ const AddLogModal = () => {
               Log Message
             </label>
           </div>
-        </div>
+        </div> */}
 
-        <div className='row'>
+        {/* <div className='row'>
           <div className='input-field'>
             <select
               name='tech'
@@ -49,7 +44,7 @@ const AddLogModal = () => {
               <option value='Mexican Latino'>Mexican Latino</option>
             </select>
           </div>
-        </div>
+        </div> */}
 
         <div className='row'>
           <div className='input-field'>
@@ -60,7 +55,7 @@ const AddLogModal = () => {
                   className='filled-in'
                   checked={attention}
                   value={attention}
-                  onChange={(e) => setAttention(!attention)}
+                  onChange={setAttention(!attention)}
                 />
                 <span>Needs Attention</span>
               </label>
@@ -72,7 +67,7 @@ const AddLogModal = () => {
       <div className='modal-footer'>
         <a
           href='#!'
-          onClick={onSubmit}
+          onClick={() => onSubmit}
           className='modal-close waves-effect blue waves-light btn'
         >
           Enter

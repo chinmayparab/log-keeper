@@ -1,18 +1,13 @@
 import React, { useState } from "react";
-import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddLogModal = () => {
   const [message, setMessage] = useState("");
   const [attention, setAttention] = useState(false);
   const [tech, setTech] = useState("");
 
-  const onSubmit = () => {
-    if (message === "" || tech === "") {
-      M.toast({ html: "Please enter a message and tech" });
-    } else {
-      console.log(message, tech, attention);
-    }
-  };
+  //   const onSubmit = () => {
+  //     console.log(message, tech, attention);
+  //   };
 
   return (
     <div id='add-log-modal' className='modal' style={modalStyle}>
@@ -44,9 +39,9 @@ const AddLogModal = () => {
               <option value='' disabled>
                 Select Techie
               </option>
-              <option value='John Downer'>John Downer</option>
+              <option value='John Doe'>John Doe</option>
               <option value='Americanan Manana'>Americanan Manana</option>
-              <option value='Mexican Latino'>Mexican Latino</option>
+              <option value='aman snu'>aman snu</option>
             </select>
           </div>
         </div>
@@ -54,13 +49,13 @@ const AddLogModal = () => {
         <div className='row'>
           <div className='input-field'>
             <p>
-              <label>
+              <label htmlFor=''>
                 <input
                   type='checkbox'
                   className='filled-in'
                   checked={attention}
                   value={attention}
-                  onChange={(e) => setAttention(!attention)}
+                  onChange={setAttention(!attention)}
                 />
                 <span>Needs Attention</span>
               </label>
@@ -72,8 +67,8 @@ const AddLogModal = () => {
       <div className='modal-footer'>
         <a
           href='#!'
-          onClick={onSubmit}
-          className='modal-close waves-effect blue waves-light btn'
+          //   onclick={onSubmit}
+          className='modal-close waves-effect waves-green btn-flat'
         >
           Enter
         </a>
