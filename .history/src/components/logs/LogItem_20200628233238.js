@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const LogItem = ({ log }) => {
   return (
-    <li className='collection-item teal lighten-5'>
+    <li className='collection-item blue-grey lighten-4'>
       <div>
         <a
           href='#edit-log-modal'

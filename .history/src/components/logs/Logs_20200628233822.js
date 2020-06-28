@@ -27,7 +27,7 @@ const Logs = () => {
   return (
     <div>
       <ul className='collection with-header'>
-        <li className='collection-header blue-grey darken-3'>
+        <li className='collection-header light-blue accent-1'>
           <h4 className='center white-text'>System Logs</h4>
         </li>
         {!loading && logs.length === 0 ? (
