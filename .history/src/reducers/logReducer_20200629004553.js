@@ -15,12 +15,12 @@ export default (state = initialState, action) => {
         logs: action.payload,
         loading: false,
       };
-    case ADD_LOG:
-      return {
-        ...state,
-        logs: [...state.logs, action.payload],
-        loading: false,
-      };
+      case ADD_LOG:
+        return {
+          ...state,
+          logs: [...state.logs, action.payload]
+          loading: true,
+        };
     case SET_LOADING:
       return {
         ...state,

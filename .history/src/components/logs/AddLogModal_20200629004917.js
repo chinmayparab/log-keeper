@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { addLog } from "../../actions/logActions";
 import M from "materialize-css/dist/js/materialize.min.js";
 
-const AddLogModal = ({ addLog }) => {
+const AddLogModal = () => {
   const [message, setMessage] = useState("");
   const [attention, setAttention] = useState(false);
   const [tech, setTech] = useState("");
@@ -13,17 +13,7 @@ const AddLogModal = ({ addLog }) => {
     if (message === "" || tech === "") {
       M.toast({ html: "Please enter a message and tech" });
     } else {
-      const newLog = {
-        message,
-        attention,
-        tech,
-        date: new Date(),
-      };
-
-      addLog(newLog);
-
-      M.toast({ html: `Log added by ${tech}` });
-
+      console.log(message, tech, attention);
       //   Clearing fields
       setMessage("");
       setTech("");
@@ -98,11 +88,6 @@ const AddLogModal = ({ addLog }) => {
     </div>
   );
 };
-
-AddLogModal.propTypes = {
-  addLog: PropTypes.func.isRequired,
-};
-
 const modalStyle = {
   width: "75%",
   height: "75%",
