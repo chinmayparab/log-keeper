@@ -30,7 +30,7 @@ export default (state = initialState, action) => {
     case DELETE_LOG:
       return {
         ...state,
-        logs: state.logs.filter((log) => log.id !== action.payload),
+        logs: state.logs.filter(),
         loading: false,
       };
     case SET_LOADING:

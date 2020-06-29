@@ -10,7 +10,7 @@ const LogItem = ({ log, deleteLog }) => {
   const onDelete = () => {
     deleteLog(log.id);
 
-    M.toast({ html: "Log Deleted" });
+    M.toats({ html: "Log Deleted" });
   };
 
   return (
