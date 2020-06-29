@@ -2,24 +2,24 @@
   "logs": [
     {
       "id": 1,
-      "message": "Changed stuff",
-      "attention": false,
-      "date": "07-12-2018",
-      "tech": "Lil Pete"
+      "message": "Changed stuff hjmshbxjxzbhjxnbznbxcz",
+      "attention": true,
+      "tech": "Americanan Manana",
+      "date": "2020-06-29T17:14:44.037Z"
     },
     {
       "id": 3,
       "message": "Modified and edited stuff",
-      "attention": true,
-      "date": "7-12-2018",
-      "tech": "Jene Grey"
+      "attention": false,
+      "tech": "Jene Grey",
+      "date": "2020-06-29T17:14:48.606Z"
     },
     {
+      "id": 5,
       "message": "AB kya karte bhai",
       "attention": true,
-      "tech": "John Downer",
-      "date": "2020-06-28T19:34:03.457Z",
-      "id": 5
+      "tech": "Mexican Latino",
+      "date": "2020-06-29T17:14:57.396Z"
     }
   ],
   "techs": [

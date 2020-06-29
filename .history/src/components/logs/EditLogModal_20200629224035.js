@@ -17,23 +17,13 @@ const EditLogModal = ({ current, updateLog }) => {
       setAttention(current.attention);
       setTech(current.tech);
     }
-  }, [current]);
+  });
 
   const onSubmit = () => {
     if (message === "" || tech === "") {
       M.toast({ html: "Please enter a message and tech" });
     } else {
-      const updLog = {
-        id: current.id,
-        message,
-        attention,
-        tech,
-        date: new Date(),
-      };
-
-      updateLog(updLog);
-      M.toast({ html: `Log Updated by ${tech}` });
-
+      console.log(message, tech, attention);
       //   Clearing fields
       setMessage("");
       setTech("");
@@ -54,6 +44,9 @@ const EditLogModal = ({ current, updateLog }) => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
+            <label htmlFor='message' className='active'>
+              Log Message
+            </label>
           </div>
         </div>
 
