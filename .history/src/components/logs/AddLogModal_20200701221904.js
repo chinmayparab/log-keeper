@@ -62,7 +62,9 @@ const AddLogModal = ({ addLog }) => {
               <option value='' disabled>
                 Select Techie
               </option>
-              <TechSelectOptions />
+              <option value='John Downer'>John Downer</option>
+              <option value='Americanan Manana'>Americanan Manana</option>
+              <option value='Mexican Latino'>Mexican Latino</option>
             </select>
           </div>
         </div>
