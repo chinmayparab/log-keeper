@@ -5,7 +5,7 @@ import {
   SET_LOADING,
   TECHS_ERROR,
 } from "../actions/types";
-// import { setLoading } from "../actions/logActions";
+import { setLoading } from "../actions/logActions";
 
 const initialState = {
   techs: null,
