@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { addTech } from "../../actions/techActions";
 
-const AddTechModal = ({ addTech }) => {
+const AddTechModal = (addTech) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
@@ -16,8 +16,6 @@ const AddTechModal = ({ addTech }) => {
         firstName,
         lastName,
       });
-
-      M.toast({ html: `${firstName} ${lastName} was added as a Techie` });
       //   Clearing fields
       setFirstName("");
       setLastName("");
@@ -49,7 +47,7 @@ const AddTechModal = ({ addTech }) => {
               type='text'
               name='lastName'
               value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              onChange={(e) => setFirstName(e.target.value)}
             />
             <label htmlFor='lastName' className='active'>
               Last Name
@@ -61,7 +59,7 @@ const AddTechModal = ({ addTech }) => {
           <a
             href='#!'
             onClick={onSubmit}
-            className='modal-close waves-effect blue-grey waves-light btn'
+            className='modal-close waves-effect blue waves-light btn'
           >
             Enter
           </a>

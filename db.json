@@ -47,6 +47,16 @@
       "firstName": "Mike",
       "lastName": "Ehrmantraut",
       "id": 5
+    },
+    {
+      "firstName": "Kendall",
+      "lastName": "Jenner",
+      "id": 6
+    },
+    {
+      "firstName": "Kylie",
+      "lastName": "Jenner",
+      "id": 7
     }
   ]
 }

@@ -27,21 +27,17 @@ export const getTechs = () => async (dispatch) => {
 };
 
 // add technician
-export const addTech = (tech) => async (dispatch) => {
+export const addTechs = (tech) => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch("/techs", {
-      method: "POST",
-      body: JSON.stringify(tech),
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const res = await fetch("/techs"{
+      method:'POST',
     });
     const data = await res.json();
 
     dispatch({
-      type: ADD_TECH,
+      type: ADD_TECHS,
       payload: data,
     });
   } catch (err) {
